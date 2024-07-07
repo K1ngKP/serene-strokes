@@ -1,0 +1,16 @@
+/* global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary text-secondary font-sans;
+}
+
+.highlight {
+  @apply text-highlight;
+}
+
+.accent {
+  @apply text-accent;
+}
