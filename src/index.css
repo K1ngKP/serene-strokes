@@ -1,16 +1,36 @@
-/* global.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html.dark {
+  --color-bg: #2D283E;
+  --color-text: #D1D7E0;
+  --color-primary: #802BB1;
+  --color-secondary: #564F6F;
+  --color-muted: #4C495D;
+}
+
+html.light {
+  --color-bg: #D1D7E0;
+  --color-text: #2D283E;
+  --color-primary: #802BB1;
+  --color-secondary: #564F6F;
+  --color-muted: #4C495D;
+}
+
 body {
-  @apply bg-primary text-secondary font-sans;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
-.highlight {
-  @apply text-highlight;
+.button-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text);
 }
 
-.accent {
-  @apply text-accent;
+.button-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
 }
+
+/* Other styles based on the variables */
